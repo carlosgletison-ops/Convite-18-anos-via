@@ -78,6 +78,9 @@
       }
     </script>
 <style>
+        html {
+            scroll-behavior: smooth;
+        }
         .kinetic-curve {
             position: absolute;
             z-index: -1;
@@ -96,52 +99,50 @@
     <link rel="icon" href="icone-vermelho.png" type="image/png">
 </head>
 <body class="bg-surface font-body text-on-surface selection:bg-primary-container selection:text-white overflow-x-hidden">
-<header class="absolute top-0 left-0 w-full z-50 px-8 py-8 md:px-16 flex items-center gap-6">
+<header class="absolute top-0 left-0 w-full z-50 px-8 py-8 md:px-16 flex items-center justify-center gap-6">
     <!-- Logo Via Medicamentos -->
-    <img src="Logo Via Medicamentos.png" alt="Logo Via Medicamentos" class="h-14 md:h-20 w-auto z-50">
+    <img src="logo vertical.png" alt="Logo Via Medicamentos" class="h-20 md:h-28 lg:h-32 w-auto z-50">
 </header>
 <main>
 <!-- Hero Section -->
-<section class="relative min-h-[100vh] flex items-center justify-center px-6 overflow-hidden bg-gradient-to-[135deg] from-surface via-surface to-surface-container-low">
+<section class="relative min-h-[100vh] flex items-center justify-center px-6 overflow-hidden bg-surface">
 
-<!-- Background Giant Graphics (Simple, as complements) -->
-<div class="absolute inset-0 pointer-events-none z-0 overflow-hidden">
-    <svg class="absolute top-1/2 right-[-20%] -translate-y-1/2 w-[80%] max-w-[800px] h-auto text-primary z-0 opacity-10 mix-blend-multiply" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M200 40C288.366 40 360 111.634 360 200C360 288.366 288.366 360 200 360" stroke="currentColor" stroke-width="60" stroke-linecap="round"/>
-        <path d="M300 200C300 144.772 255.228 100 200 100C144.772 100 100 144.772 100 200" stroke="currentColor" stroke-width="40" stroke-linecap="round"/>
-        <circle cx="200" cy="40" r="40" fill="currentColor"/>
-    </svg>
-    <div class="absolute inset-0 bg-primary opacity-[0.02] blur-3xl rounded-full scale-150 transform -translate-y-1/2"></div>
-</div>
-
-<div class="max-w-5xl mx-auto text-center z-10 pt-24 md:pt-32">
-    <h1 class="text-3xl md:text-5xl lg:text-6xl font-black tracking-tight text-primary mb-10" style="text-wrap: balance;">
-        Um momento que marca a nossa história!
+<div class="max-w-5xl mx-auto text-center z-10 pt-36 md:pt-48 lg:pt-56 px-2 sm:px-6">
+    <h1 class="text-[clamp(22px,8.5vw,48px)] lg:text-7xl leading-[1.1] font-black tracking-tighter text-primary mb-4 w-full">
+        Um momento que marca a<br>nossa história!
     </h1>
-    <div class="text-xl md:text-3xl lg:text-4xl text-on-surface mb-16 max-w-4xl mx-auto leading-[1.6] font-medium flex flex-col gap-10" style="text-wrap: balance;">
-        <p>Quando o trabalho é verdadeiro e de excelência, ele não passa despercebido.</p>
-        <p>A <strong class="font-black text-on-surface">Assembleia Legislativa do Estado do Ceará</strong> realiza uma sessão solene em homenagem aos 18 anos da <span class="text-primary font-black">Via Medicamentos</span>.</p>
-        <p class="text-lg md:text-2xl lg:text-3xl text-on-surface-variant font-normal leading-relaxed mt-2">
+    <div class="mb-12 max-w-3xl mx-auto flex flex-col gap-6 md:gap-8 px-2 sm:px-0">
+        <p class="text-base sm:text-lg md:text-xl font-medium text-on-surface/60 italic tracking-wide">
+            "Quando o trabalho é verdadeiro e de excelência, ele não passa despercebido."
+        </p>
+        
+        <p class="text-sm sm:text-base md:text-lg lg:text-xl text-on-surface/90 font-medium leading-[1.8] max-w-2xl mx-auto">
+            O presidente da Assembleia Legislativa do Estado do Ceará (Alece), deputado <strong class="text-primary font-bold">Romeu Aldigueri</strong>, atendendo ao requerimento do deputado <strong class="text-on-surface font-bold">Simão Pedro</strong>, subscrito pelo deputado <strong class="text-on-surface font-bold">Marcos Sobreira</strong>, convida para a sessão solene em comemoração dos 18 anos da empresa <span class="text-primary font-black">Via Medicamentos</span>.
+        </p>
+        
+        <div class="h-px w-24 bg-on-surface/10 mx-auto my-2"></div>
+        
+        <p class="text-xs sm:text-sm md:text-base text-on-surface/70 font-normal leading-relaxed max-w-xl mx-auto">
             Um reconhecimento oficial, em nome do Estado, que representa muito mais do que uma celebração. Representa o valor de uma trajetória construída com seriedade e impacto real na saúde do Ceará.
         </p>
     </div>
 
     <!-- Info Badges (Centered) -->
-    <div class="flex flex-wrap justify-center gap-4 mb-20">
-        <div class="bg-primary text-white px-6 py-2.5 rounded-full font-bold text-sm md:text-base shadow-lg hover:-translate-y-1 transition-transform cursor-default">
-            Plenário 13 de Maio
+    <div class="flex flex-col sm:flex-row flex-wrap justify-center gap-3 md:gap-4 mb-8 text-center items-center w-full px-4 sm:px-0">
+        <div class="bg-primary w-full sm:w-auto text-white px-5 sm:px-6 py-3 md:py-2.5 rounded-full font-bold text-xs sm:text-sm md:text-base shadow-lg hover:-translate-y-1 transition-transform cursor-default">
+            <span class="font-normal opacity-80 uppercase text-[10px] sm:text-xs md:text-sm tracking-widest mr-1">Local:</span> Plenário Treze de Maio
         </div>
-        <div class="bg-primary text-white px-6 py-2.5 rounded-full font-bold text-sm md:text-base shadow-lg hover:-translate-y-1 transition-transform cursor-default">
-            27 de Abril
+        <div class="bg-primary w-full sm:w-auto text-white px-5 sm:px-6 py-3 md:py-2.5 rounded-full font-bold text-xs sm:text-sm md:text-base shadow-lg hover:-translate-y-1 transition-transform cursor-default">
+            <span class="font-normal opacity-80 uppercase text-[10px] sm:text-xs md:text-sm tracking-widest mr-1">Data:</span> 27 de Abril
         </div>
-        <div class="border-2 border-primary text-primary bg-white/80 backdrop-blur-md px-6 py-2.5 rounded-full font-bold text-sm md:text-base shadow-sm hover:-translate-y-1 transition-transform cursor-default">
-            14:00
+        <div class="border-2 border-primary w-full sm:w-auto text-primary bg-white/80 backdrop-blur-md px-5 sm:px-6 py-3 md:py-2.5 rounded-full font-bold text-xs sm:text-sm md:text-base shadow-sm hover:-translate-y-1 transition-transform cursor-default">
+            <span class="font-semibold opacity-80 uppercase text-[10px] sm:text-xs md:text-sm tracking-widest mr-1">Horário:</span> 14:00
         </div>
     </div>
 
     <!-- Seta CTA -->
-    <div class="flex justify-center mt-16">
-        <a class="group flex flex-col items-center gap-3 text-xs font-bold tracking-[0.2em] uppercase text-secondary hover:text-primary transition-all duration-500" href="#event">
+    <div class="flex justify-center mt-6 mb-16 md:mb-24">
+        <a class="group flex flex-col items-center gap-3 text-xs font-bold tracking-[0.2em] uppercase text-secondary hover:text-primary transition-all duration-500" href="#video">
             <span class="opacity-70 group-hover:opacity-100 transition-opacity">Deslize para ver mais</span>
             <div class="w-10 h-10 flex items-center justify-center rounded-full border border-secondary/30 group-hover:border-primary/50 group-hover:bg-primary/5 transition-all duration-300">
                 <span class="material-symbols-outlined group-hover:translate-y-1 transition-transform duration-300 text-lg" style="font-variation-settings: 'wght' 300;">south</span>
@@ -151,13 +152,13 @@
 </div>
 </section>
 <!-- Video Section -->
-<section class="py-24 bg-white relative" id="video">
-    <div class="max-w-5xl mx-auto px-6 text-center relative z-10">
+<section class="py-16 md:py-24 bg-white relative" id="video">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 text-center relative z-10">
         
-        <h2 class="text-3xl md:text-5xl font-extrabold tracking-tight mb-2 text-on-surface">
-            Um reconhecimento ao impacto da<br/>
+        <h2 class="text-2xl sm:text-3xl md:text-5xl font-extrabold tracking-tight mb-2 text-on-surface" style="text-wrap: balance;">
+            Um reconhecimento ao impacto da<br class="hidden sm:block"/>
         </h2>
-        <h3 class="text-3xl md:text-5xl font-extrabold tracking-tight text-on-surface">
+        <h3 class="text-2xl sm:text-3xl md:text-5xl font-extrabold tracking-tight text-on-surface" style="text-wrap: balance;">
             <span class="text-primary">Via Medicamentos</span> na saúde do Ceará
         </h3>
         
@@ -173,9 +174,14 @@
                 <p class="text-white h-full flex items-center justify-center text-sm px-6">Seu navegador não suporta vídeos HTML5.</p>
             </video>
         </div>
-        
 
-        
+        <!-- Text Area Below Video -->
+        <div class="mt-12 md:mt-20 max-w-3xl mx-auto bg-surface-container-lowest p-6 sm:p-8 md:p-12 rounded-3xl shadow-lg border border-primary/10 text-center mx-4 sm:mx-auto">
+            <h4 class="text-xl sm:text-2xl md:text-4xl font-extrabold text-on-surface tracking-tight" style="text-wrap: balance;">
+                Venha prestigiar esse <span class="text-primary block sm:inline mt-1 sm:mt-0">momento tão especial</span> conosco!
+            </h4>
+        </div>
+
     </div>
 </section>
 
